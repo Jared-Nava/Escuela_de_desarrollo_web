@@ -1,8 +1,10 @@
 * {box-sizing: border-box;  margin: 0px;   padding: 0px;}
 html {font-size: 62.5%;}
+a {text-decoration: none; color: white;}
+li {list-style: none;}
 
 body{
-background-image: url("pexels-alex-knight-2816904.webp");
+background-image: url("https://raw.githubusercontent.com/Jared-Nava/Escuela_de_desarrollo_web/pruebas_gbpages/00%20nav%20center/sources/pexels-alex-knight-2816904.webp");
 background-position: center;
 background-attachment: fixed;
 background-size: cover;
@@ -12,40 +14,95 @@ color: hsl(0, 0%, 100%);
 header 
 {
     width:100%;
-    height:20vh;
-
+    height:9vh;
+    position: relative;
+    z-index: 2;
 }
 
 nav
 {
     width:100%;
     height:100%;
-    background-color: rgba(223, 152, 93, 0.219);
     display: flex;
-
-
 }
 
 .logo
 {
     width:50%;
-    height:40%;
+    height:100%;
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
-    border-bottom: solid 0.5px;
-    
+    border-bottom: white solid;
+
+    border-width: 1px; border-color: rgb(255, 255, 255);
+}
+
+.logo img 
+{   
+    margin-left: 5%;
 }
 
 .menu
 {
     width:50%;
-    height:40%;
+    height:100%;
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     border-bottom: solid 0.3px;
+    font-size: 1.6rem;
 }
 
-.escuela{position: absolute;}
+.escuela
+{
+    position: fixed;
+    right: 0%;
+    top: 8.90vh;
+    width: 315px;
+    height: 115px;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+.icono 
+{
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: white solid;
+    border-width: 0.01em;
+}
+.icono img 
+{
+    width: 65px;
+    height: 65px;
+}
+
+.nombre 
+{
+    width: 230px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: white solid;
+    border-width: 0.01em;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.ubicacion
+    {
+        width: 315px;
+        height: 30px;
+        font-size: 16px;
+        border: white solid;
+        border-width: 0.01em;
+        text-align: center;
+        display: grid; align-content: center;
+    }
+
 /* blur effect front
 .icono
 {    
@@ -64,7 +121,9 @@ blur effect back ✅
 main
 {
     width:100%;
-    height:78vh;
+    height:76.5vh;
+    margin-top: calc(9vh + 30px);
+    background-color: rgba(255, 99, 71, 0.364);
 }
 footer
 {
