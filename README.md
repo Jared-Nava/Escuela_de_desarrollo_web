@@ -1,1 +1,2 @@
-# Escuela_de_desarrollo_web
+Proyectos de la ruta
+https://platzi.com/web/
