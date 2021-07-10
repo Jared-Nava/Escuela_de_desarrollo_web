@@ -55,7 +55,8 @@ nav
     height:100%;
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
-    border-bottom: solid var(--mainborderColor) 0.1em;
+    border-bottom: solid var(--mainborderColor) ;
+    border-width: 0.01em;
     font-size: 1.6rem;
     display: flex;
     justify-content: flex-start;
@@ -139,8 +140,8 @@ main section{
     grid-template-rows: 225px 225px; 
     gap: 75px 15px; 
     grid-template-areas: 
-      ". . ."
-      ". . ."; 
+    ". . ."
+    ". . ."; 
     justify-content: center; 
     justify-items: center; 
     align-items: flex-start; 
