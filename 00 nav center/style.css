@@ -130,7 +130,6 @@ main
     width:75%;
     height:76.5vh;
     margin-top: calc(9vh + 30px);
-    background-color: rgba(95, 158, 160, 0.337);
     }
 main section{
     width: 100%;
@@ -160,6 +159,7 @@ main section{
     border-radius:10px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     }
 .curso 
     {
@@ -171,11 +171,18 @@ main section{
     border-radius: 8px 8px 0 0;
     }
 .banner img
-{
+    {
     width: 268px;
     height: auto;
     border-radius: 0 0 8px 8px;
-}
+    }
+.none_banner
+    {
+    width: 50px;
+    height: auto;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    }
 .redireccion_curso_1 img {
     position: absolute;
     bottom: 0%;
