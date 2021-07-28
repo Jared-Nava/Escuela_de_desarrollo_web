@@ -173,7 +173,7 @@ main section{
 .banner img
     {
     width: 268px;
-    height: auto;
+    height: 173px;
     border-radius: 0 0 8px 8px;
     }
 .none_banner
@@ -183,13 +183,20 @@ main section{
     -webkit-filter: invert(100%);
     filter: invert(100%);
     }
-.redireccion_curso_1 img {
+.none_banner img 
+    {
+    content: url("https://raw.githubusercontent.com/Jared-Nava/Escuela_de_desarrollo_web/pruebas_gbpages/00%20nav%20center/sources/help-sing.svg");
+    }
+.redireccion_curso_1 img 
+    {
+    content: url("https://github.com/Jared-Nava/Escuela_de_desarrollo_web/blob/main/00%20nav%20center/sources/platzi%20logo.png?raw=true");
     position: absolute;
     bottom: 0%;
     right: 0%;
     width: 40px;
     height: 40px;
-}
+    }
+    
 footer
     {
     width:100%;
