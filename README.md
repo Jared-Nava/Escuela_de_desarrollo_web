@@ -1,3 +1,6 @@
 Proyectos de la ruta
 https://platzi.com/web/
-Live en http://practice.jarednava.com/
+
+Proyecto en linea desde
+https://practice.jarednava.com/
+

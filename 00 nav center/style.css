@@ -1,74 +1,221 @@
 * {box-sizing: border-box;  margin: 0px;   padding: 0px;}
 html {font-size: 62.5%;}
+a {text-decoration: none; color: white;}
+li {list-style: none;}
 
-body{
-background-image: url("/00 nav center/sources/pexels-alex-knight-2816904.webp");
+body
+{
+background-image: url("https://raw.githubusercontent.com/Jared-Nava/Escuela_de_desarrollo_web/pruebas_gbpages/00%20nav%20center/sources/pexels-alex-knight-2816904.webp");
 background-position: center;
 background-attachment: fixed;
 background-size: cover;
 color: hsl(0, 0%, 100%);
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+/*  font-family: 'Poppins', sans-serif; 
+    font-weight: 400;
+*/
 }
+
+:root 
+    {
+    --mainborderColor: rgba(187, 187, 187, 0.748);
+    }
 
 header 
-{
+    {
     width:100%;
-    height:20vh;
-
-}
+    height:9vh;
+    position: relative;
+    z-index: 2;
+    }
 
 nav
-{
+    {
     width:100%;
     height:100%;
-    background-color: rgba(223, 152, 93, 0.219);
     display: flex;
-
-
-}
-
+    }
 .logo
-{
-    width:20%;
-    height:40%;
+    {
+    width:50%;
+    height:100%;
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
-    border-bottom: solid 0.5px;
-    
-}
+    border-bottom: solid var(--mainborderColor) ;
+    border-width: 0.01em;
+    }
+.logo img 
+    {   
+    margin-left: 5%;
+    }
 
 .menu
-{
-    width:80%;
-    height:40%;
+    {
+    width:50%;
+    height:100%;
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
-    border-bottom: solid 0.3px;
-}
+    border-bottom: solid var(--mainborderColor) ;
+    border-width: 0.01em;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: flex-end;
+    }
+.menu ul 
+    {
+    display: flex;
+    align-items: center;
+    }
+.menu ul li 
+    {
+    display:inline-block;
+    list-style-type:none;
+    margin-right:4px;
+    padding:10px
+    }
 
-.escuela{position: absolute;}
-/* blur effect front
-.icono
-{    
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-} 
-
-blur effect back ✅
-.icono
-{    
+.escuela
+    {
+    position: fixed;
+    right: 0%;
+    top: 8.90vh;
+    width: 315px;
+    height: 115px;
+    display: flex;
+    flex-wrap: wrap;
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
-}*/
+    border:solid var(--mainborderColor);
+    border-width: 0.01em 0 0.01em 0.01em;
+    box-sizing: content-box;
+    }
+.icono 
+    {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:solid var(--mainborderColor);
+    border-width: 0 0.01em 0.01em 0;
+    }
+.icono img 
+    {
+    width: 65px;
+    height: 65px;
+    }
+.nombre 
+    {
+    width: 230px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:solid var(--mainborderColor);
+    border-width: 0 0 0.01em 0;
+    font-size: 1.7rem;
+    }
+.ubicacion
+    {
+    width: 315px;
+    height: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+    display: grid; align-content: center;
+    }
 
 
 main
-{
-    width:100%;
-    height:78vh;
-}
+    {
+    width:75%;
+    height:76.5vh;
+    margin-top: calc(9vh + 30px);
+    }
+main section{
+    width: 100%;
+    height: 100%;
+    display: grid; 
+    grid-template-columns: 300px 300px 300px; 
+    grid-template-rows: 225px 225px; 
+    gap: 75px 15px; 
+    grid-template-areas: 
+    ". . ."
+    ". . ."; 
+    justify-content: center; 
+    justify-items: center; 
+    align-items: flex-start; 
+    font-size: 1.4rem;
+    }
+
+.caja
+    {
+    width: 270px;
+    height: 200px;
+    background-color: rgba(7, 0, 14, 0.172);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border:solid var(--mainborderColor);
+    border-width: 0.01em;
+    border-radius:10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+.curso 
+    {
+    background-color:rgba(0, 0, 0, 0.261);
+    font-size: 1.4rem;
+    padding: 0 0 10px 12px;
+    width: 270px;
+    height: 25px;
+    border-radius: 8px 8px 0 0;
+    }
+.banner img
+    {
+    width: 268px;
+    height: 173px;
+    border-radius: 0 0 8px 8px;
+    }
+.none_banner
+    {
+    width: 50px;
+    height: auto;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    }
+.none_banner img 
+    {
+    content: url("https://raw.githubusercontent.com/Jared-Nava/Escuela_de_desarrollo_web/pruebas_gbpages/00%20nav%20center/sources/help-sing.svg");
+    }
+.redireccion_curso_1 img 
+    {
+    content: url("https://github.com/Jared-Nava/Escuela_de_desarrollo_web/blob/main/00%20nav%20center/sources/platzi%20logo.png?raw=true");
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 40px;
+    height: 40px;
+    }
+
 footer
-{
+    {
     width:100%;
     height:2vh;
-    background-color:rgba(134, 28, 28, 0.172);
-}
+
+    }
+    
+/* 
+blur effect front
+.icono
+    {    
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    } 
+
+blur effect back ✅
+.icono
+    {    
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    }
+*/
